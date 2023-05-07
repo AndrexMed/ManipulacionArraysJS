@@ -1,4 +1,4 @@
-//Con el metodo reduce, como lo dice su nombre reducimos todos los elementos a UNO
+//Con el metodo reduce, como lo dice su nombre reducimos todos los elementos a UNO, no devuelve un nuevo arreglo....
 //Ejercicio: Sumar todos los item de un arreglo.
 
 const numeros = [2,4,6,8]
