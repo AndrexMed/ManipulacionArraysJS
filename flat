@@ -1,0 +1,21 @@
+//El método flat es inmutable que consiste en retornar un array donde los sub-arrays han sido aplanados hasta una profundidad especificada. El aplanamiento consiste en transformar un array de arrays a una sola dimensión.
+
+const matrix = [
+    [1, 2, 3,[4,5,6]], // Posicion 0 en el For -- Si hay arrays dentro de otros arrays, para recorrerlo, tocaria anidar otro ciclo...
+    [7, 8, 9], // Posicion 1
+    [10, 11, 12], //Posicion 2
+]
+
+const newArray = []
+for (let i = 0; i < matrix.length; i++) {
+    const array = matrix[i];
+    for (let j = 0; j < array.length; j++) {
+        const element = matrix[i][j];
+        newArray.push(element)
+    }
+}
+
+const rta = matrix.flat(2) // Se le agregaa el "2", ya que hay arrays dentro de arrays...
+
+console.log("Con for: ",newArray)
+console.log("Con metodo flat() ",rta)
